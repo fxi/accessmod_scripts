@@ -1,3 +1,0 @@
-COMMAND: v.in.ogr --overwrite -2 -w input="/tmp/data/facilities/vector_facility_demo.shp" output="vFacility__test" min_area=0.0001 type="" snap=1e-04 key="cat"
-GISDBASE: /data/dbgrass
-LOCATION: project_imported MAPSET: project_imported USER: root DATE: Thu May 23 14:44:33 2024
