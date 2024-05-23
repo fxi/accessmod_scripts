@@ -15,7 +15,7 @@ amGrassNS(
       input = "/tmp/data/landcover_merged/raster_land_cover_merged_demo.img",
       output = "rLandCoverMerged__test",
       title = "rLandCoverMerged__test",
-      flags = c("overwrite", "quiet"),
+      flags = c("overwrite", "quiet")
     )
 
     execGRASS("v.in.ogr",
@@ -27,6 +27,6 @@ amGrassNS(
     )
 
     x <- amProjectExport("project_imported")
-    file.copy(x, "/tmp/am5p/exported.am5p")
+    file.copy(x, "/tmp/out/exported.am5p")
   }
 )

@@ -1,9 +1,10 @@
 #!/bin/bash 
 set -e
 
+# use :ro to avoid removal by the script (default behavior in am5)
 docker run \
-  -v $(pwd)/data:/tmp/data \
-  -v $(pwd)/scripts:/tmp/scripts \
+  -v $(pwd)/data:/tmp/data:ro \
+  -v $(pwd)/scripts:/tmp/scripts:ro \
   -v $(pwd)/out:/tmp/out \
   --rm \
   -ti \
